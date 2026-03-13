@@ -4,6 +4,7 @@ class BankAccount():
 
     def deposite(self,amount):
         self.balance += amount
+        print("Deposit Successful")
         print("Deposited amount:",amount)
         print("Current balance:",amount)
 
@@ -13,6 +14,7 @@ class BankAccount():
 
         else:
             self.balance -= amount
+            print("Withral Sucessful")
             print("withrawn amount:",amount)
             print("Available balance:",self.balance)
 
@@ -21,5 +23,5 @@ class BankAccount():
 
 d = BankAccount()
 
-d.deposite(100)
-d.withral(50)
+d.deposite(2000)
+d.withral(1000)
