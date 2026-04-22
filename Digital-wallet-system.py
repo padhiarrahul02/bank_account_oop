@@ -7,7 +7,7 @@ class Wallet:
     
     def spend_balance(self,amount):
         if amount <= self.__balance:
-            self.__balance -= amount
+            self.__balance -= amount 
         else:
             print("Ensufficient Balance..")
     def balance_check(self):
